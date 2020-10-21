@@ -1,0 +1,104 @@
+{
+    "game":{
+        "developmentCards":[
+            
+        ],
+        "developmentCardInit":{
+            "roadBuilding": 2,
+            "victoryPoint": 5,
+            "yearOfPlenty": 2,
+            "monopoly": 2,
+            "knight": 13
+        },
+        "players":[
+            
+        ],
+        "longestRoad":{
+            "player": "",
+            "value": 4,
+            "victoryPoints": 2
+        },
+        "largestArmy":{
+            "player": "",
+            "value": 2,
+            "victoryPoints": 2    
+        },
+        "playerTurn": "",
+        "dice":{
+            "dice1": 0,
+            "dice2": 0
+        },
+        "board":{
+            "tiles":[],
+            "vertices":[],
+            "edges":[]
+        }
+    },
+    "player":{
+        "inventory":{
+            "roads": 15,
+            "settlements": 5,
+            "cities": 4
+        },
+        "resources":[],
+        "resourceThreshold": 7,
+        "developmentCards":[],
+        "knight": 0,
+        "totalVictoryPoints": 0,
+        "victoryPointsInCards": 0
+    },
+    "vertex":{
+        "player": "",
+        "type": "",
+        "edges": []
+    },
+    "edge":{
+        "v1": "",
+        "v2": ""
+    }
+}
+
+
+tile
+keys:
+number
+isoccupied
+vertices[]
+desert
+terrain
+field (wheat)
+mine (bricks)
+quarry (iron)
+lumbermill (lumber)
+pasture (wool)
+sea
+port
+2:1 wheat
+2:1 bricks
+2:1 iron
+2:1 lumber
+2:1 wool
+3:1 any (x3)
+building
+road (edge)
+vertex
+keys:
+player
+numresources = 1
+victorypoints = 1
+settlement
+city
+keys:
+numresources = 2
+victorypoints = 2
+development card
+
+
+turn
+should use a knight?
+roll dice
+if dice result = 7: move soldier
+else: grant resources
+build / trade / end turn
+calculate points
+check if victory
