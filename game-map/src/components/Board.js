@@ -5,8 +5,8 @@ function Board(props) {
 
     return ( 
       <div className = "boardContainer" >
-        {props.rows.map(row => (
-        < Row key={row.id} id={row.id} className={`row ${row.isEven ? 'even' : 'odd'}`} tiles={row.tiles}/>
+        {props.tileRows.map(row => (
+        < Row key={row.id} {...row} className={`row ${row.isEven ? 'even' : 'odd'}`}/>
         ))}
       </div>
     );

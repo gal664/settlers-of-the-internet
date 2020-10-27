@@ -31,6 +31,9 @@ function Tile(props) {
   let circleStyle={
     fill: "ffec95",
   }
+  let vertexStyle={
+    fill: "red",
+  }
   let numberStyle={
     fontSize: "7em",
     zIndex: 1,
